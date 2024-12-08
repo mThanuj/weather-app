@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./header";
 
 type Props = {
   children: React.ReactNode;
@@ -7,7 +8,7 @@ type Props = {
 const Layout = (props: Props) => {
   return (
     <div className="bg-gradient-to-br from-background to-muted">
-      header
+      <Header />
       <main className="min-h-screen container mx-auto px-4 py-8">
         {props.children}
       </main>
